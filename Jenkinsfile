@@ -10,6 +10,7 @@ pipeline {
         stage('Install Go') {
             steps {
                 script {
+                    sh 'sudo yum -y install wget'
                     sh 'wget https://golang.org/dl/go1.21.linux-amd64.tar.gz'
                     sh 'tar -C /usr/local -xzf go1.21.linux-amd64.tar.gz'
                     sh 'rm go1.21.linux-amd64.tar.gz'
