@@ -12,8 +12,8 @@ pipeline {
                 script {
                     sh 'sudo yum -y install wget'
                     sh 'wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz'
-                    sh 'tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz'
-                    sh 'rm go1.21.6.linux-amd64.tar.gz'
+                    sh 'sudo tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz'
+                    sh 'sudo rm go1.21.6.linux-amd64.tar.gz'
                     sh 'export PATH=$PATH:/usr/local/go/bin'
                 }
             }
