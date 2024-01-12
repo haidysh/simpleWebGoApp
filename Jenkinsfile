@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     sh 'ls'
-                    sh '/usr/local/go/bin/go build'
+                    sh '/usr/local/go/bin/go build main.go'
                 }
             }
         }
