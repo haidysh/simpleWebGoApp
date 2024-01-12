@@ -23,8 +23,7 @@ pipeline {
             steps {
                 script {
                     sh 'ls'
-                    sh 'pwd'
-                    sh 'cd && go build'
+                    sh '/usr/local/go/bin/go build'
                 }
             }
         }
